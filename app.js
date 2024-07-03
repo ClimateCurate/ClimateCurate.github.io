@@ -13,6 +13,7 @@ let index = 0;
 
 function addCalendly(){
   console.log('typeWriter');
+  Calendly.initBadgeWidget({ url: 'https://calendly.com/justdhs/compliance-reporting-discussion', text: 'Schedule An Appointment With Us', color: '#0069ff', textColor: '#ffffff', branding: undefined }); 
   typeWriter()
 }
 function typeWriter() {
