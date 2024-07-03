@@ -1,63 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML CSS Website</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/justdhs/compliance-reporting-discussion', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: undefined }); }</script>
-  </head>
-  <body>
-    
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"><img class="logo_image" src="images/Logo_New.png" alt="Logo">&nbsp;Comply.AI</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/tech" class="navbar__links">Tech</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/products" class="navbar__links">Products</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="/sign-up" class="button">Sign Up</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <h1 id="main_text"></h1>
-        </div>
-      </div>
-    </div>
-    <script src="app.js"></script>
-  </body>
-</html>
-
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,7 +10,7 @@
   <title>HTML CSS Website</title>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script> -->
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -86,8 +26,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <!-- <script type="text/javascript">window.onload = function () { }</script> -->
-
   <style>
     body,
     html {
@@ -109,12 +47,12 @@
       color: white;
     }
 
-    .section h1,
-    .section p {
+    .section h1 {
       margin: 0;
       padding: 20px;
       text-align: center;
       z-index: 2;
+      font-size: 56px;
       position: relative;
     }
 
@@ -131,6 +69,7 @@
 
     #section2 {
       justify-content: initial;
+      height: auto;
     }
 
     #our_product {
@@ -165,6 +104,17 @@
     .carousel-item {
       height: 80vh;
     }
+
+    a,
+    /* a:link, */
+    /* a:visited, */
+    a:focus,
+    a:hover,
+    a:active {
+      color: unset;
+      text-decoration: none;
+      cursor:pointer;
+    }
   </style>
 </head>
 
@@ -174,9 +124,10 @@
     Your browser does not support the video tag.
   </video>
 
-  <nav class="navbar">
+  <nav id="navbar" class="navbar transparent">
     <div class="navbar__container">
-      <a href="/" id="navbar__logo"><img class="logo_image" src="images/Logo_New.png" alt="Logo">&nbsp;Comply.AI</a>
+      <a href="/" id="navbar__logo"><img class="logo_image" src="images/Logo_New.png"
+          alt="Logo">&nbsp;ClimateComply.AI</a>
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span> <span class="bar"></span>
         <span class="bar"></span>
@@ -200,8 +151,54 @@
   <div class="section section1" id="section1">
     <h1></h1>
   </div>
-  <div class="section" id="section2">
-    <h1>What we do</h1>
+  <div>
+    <div class="section" id="section2">
+      <h1>What we do</h1>
+    </div>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <!-- <h2>Item 1</h2> -->
+          <h5>Identify opportunities and regulations within varying geographies to optimize operations</h5>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <!-- <h2>Item 2</h2> -->
+          <h5>Dynamic repository of environmental regulations, globally and locally</h5>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <!-- <h2>Item 3</h2> -->
+          <h5>Utilize advanced AI to interpret and analyze complicated compliance data</h5>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h5>Streamline auditor interactions to save your time and resources</h5>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h5>Provide timely alerts about regulatory changes affecting your business</h5>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h5>Environmental compliance monitoring with advanced data integration</h5>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="list">
+      <ul>
+        <li>Identify opportunities and regulations within varying geographies to optimize operations.</li>
+        <li>Dynamic repository of environmental regulations, globally and locally.</li>
+        <li>Utilize advanced AI to interpret and analyze complicated compliance data.</li>
+        <li>Streamline auditor interactions to save your time and resources</li>
+        <li>Provide timely alerts about regulatory changes affecting your business.</li>
+      </ul>
+    </div> -->
   </div>
   <div class="section" id="our_product">
     <h1>Our Product</h1>
@@ -233,32 +230,204 @@
     </div>
   </div>
   <div class="section" id="contact_us">
-    <h1>The Team Behind Comply.AI</h1>
+    <h1>The Team</h1>
     <div>
       <div class="img_section">
-        <img class="img" src="images/pic1.svg">
+        <img class="img" src="images/Aditya.jpg">
       </div>
 
+      <a href="https://www.linkedin.com/in/aditya-mohan-96300818b/">
+
       <div class="contact_us">
-        <h2>Jane Doe</h2>
-        <h3>CTO</h3>
-        <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
+          <h2>Aditya Mohan</h2>
+          <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
       </div>
+    </a>
+
     </div>
 
     <div>
       <div class="img_section">
-        <img class="img" src="images/pic1.svg">
+        <img class="img" src="images/Dhruv.jpg">
       </div>
 
+      <a href="https://www.linkedin.com/in/dhruv-saxena-52bb4919a/">
+
       <div class="contact_us">
-        <h2>John Doe</h2>
-        <h3>CEO</h3>
+          <h2>Dhruv Saxena</h2>
+          <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
+      </div>
+    </a>
+
+    </div>
+
+    <div>
+      <div class="img_section">
+        <img class="img" src="images/Saicharan.jpg">
+      </div>
+      <a href="https://www.linkedin.com/in/saicharan-ganapathy-1b59b91b3/">
+
+      <div class="contact_us">
+        <h2>SaiCharan Ganapathy</h2>
         <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
       </div>
+      </a>
     </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternating List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ccc;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+        }
+
+        .left .content {
+            margin-left: 70px;
+        }
+
+        .right .content {
+            margin-right: 70px;
+        }
+
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+
+        .left::after {
+            content: " ";
+            position: absolute;
+            top: 15px;
+            right: -15px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #f4f4f4;
+            border: 4px solid #ccc;
+            z-index: 1;
+        }
+
+        .right::after {
+            content: " ";
+            position: absolute;
+            top: 15px;
+            left: -15px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #f4f4f4;
+            border: 4px solid #ccc;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="timeline">
+    <div class="container left">
+        <div class="content">
+            <h2>Item 1</h2>
+            <p>Description for Item 1</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>Item 2</h2>
+            <p>Description for Item 2</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>Item 3</h2>
+            <p>Description for Item 3</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h2>Item 4</h2>
+            <p>Description for Item 4</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h2>Item 5</h2>
+            <p>Description for Item 5</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html> -->

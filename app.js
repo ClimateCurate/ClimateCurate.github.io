@@ -11,8 +11,12 @@ const text = `Your One Stop Solution For All Climate Compliance Needs`;
 const container = document.getElementById('section1');
 let index = 0;
 
+function addCalendly(){
+  console.log('typeWriter');
+  Calendly.initBadgeWidget({ url: 'https://calendly.com/justdhs/compliance-reporting-discussion', text: 'Schedule An Appointment With Us', color: '#0069ff', textColor: '#ffffff', branding: undefined }); 
+  typeWriter()
+}
 function typeWriter() {
-  Calendly.initBadgeWidget({ url: 'https://calendly.com/justdhs/compliance-reporting-discussion', text: 'Schedule time with me', color: '#0069ff', textColor: '#ffffff', branding: undefined }); 
   if (index < text.length) {
     container.innerHTML += text.charAt(index);
     index++;
@@ -20,4 +24,22 @@ function typeWriter() {
   }
 }
 
-window.onload = typeWriter;
+window.onload = addCalendly;
+
+window.addEventListener('wheel', function() {
+    // console.log(this.document.body.scrollTop);
+    const navbar = document.getElementById('navbar');
+    if (this.document.body.scrollTop > 50) { // Adjust this value based on when you want the change to happen
+        navbar.classList.remove('transparent');
+        navbar.classList.add('solid');
+    } else {
+        navbar.classList.remove('solid');
+        navbar.classList.add('transparent');
+    }
+  });
+
+// window.onscroll = function() {
+//   console.log("scrolling");
+//   myFunction()
+// };
+
