@@ -74,6 +74,7 @@
 
     #our_product {
       justify-content: initial;
+      height:130vh;
     }
 
 
@@ -102,7 +103,8 @@
     }
 
     .carousel-item {
-      height: 80vh;
+      height: 100vh;
+      width: 140vh !important;
     }
 
     a,
@@ -114,6 +116,10 @@
       color: unset;
       text-decoration: none;
       cursor:pointer;
+    }
+
+    .w-100{
+      height:100%;
     }
   </style>
 </head>
@@ -190,15 +196,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="list">
-      <ul>
-        <li>Identify opportunities and regulations within varying geographies to optimize operations.</li>
-        <li>Dynamic repository of environmental regulations, globally and locally.</li>
-        <li>Utilize advanced AI to interpret and analyze complicated compliance data.</li>
-        <li>Streamline auditor interactions to save your time and resources</li>
-        <li>Provide timely alerts about regulatory changes affecting your business.</li>
-      </ul>
-    </div> -->
   </div>
   <div class="section" id="our_product">
     <h1>Our Product</h1>
@@ -210,13 +207,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="images/pic3.jpg" alt="First slide">
+          <img class="d-block w-100" src="images/Australia_homepage.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/pic4.jpg" alt="Second slide">
+          <img class="d-block w-100" src="images/Solar_homepage.jpg" alt="Second slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="images/Logo.jpg" alt="Third slide">
+          <img class="d-block w-100" src="images/Policy_page.jpg" alt="Third slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -231,48 +228,52 @@
   </div>
   <div class="section" id="contact_us">
     <h1>The Team</h1>
+    <a href="https://www.linkedin.com/in/aditya-mohan-96300818b/">
+
     <div>
       <div class="img_section">
         <img class="img" src="images/Aditya.jpg">
       </div>
 
-      <a href="https://www.linkedin.com/in/aditya-mohan-96300818b/">
 
       <div class="contact_us">
           <h2>Aditya Mohan</h2>
           <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
       </div>
-    </a>
 
     </div>
+  </a>
+
 
     <div>
+      <a href="https://www.linkedin.com/in/dhruv-saxena-52bb4919a/">
+
       <div class="img_section">
         <img class="img" src="images/Dhruv.jpg">
       </div>
 
-      <a href="https://www.linkedin.com/in/dhruv-saxena-52bb4919a/">
 
       <div class="contact_us">
           <h2>Dhruv Saxena</h2>
           <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
       </div>
-    </a>
 
     </div>
+  </a>
+  <a href="https://www.linkedin.com/in/saicharan-ganapathy-1b59b91b3/">
 
     <div>
       <div class="img_section">
         <img class="img" src="images/Saicharan.jpg">
       </div>
-      <a href="https://www.linkedin.com/in/saicharan-ganapathy-1b59b91b3/">
 
       <div class="contact_us">
         <h2>SaiCharan Ganapathy</h2>
         <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
       </div>
-      </a>
     </div>
+  </a>
+
   </div>
 
   <script src="app.js"></script>
@@ -280,154 +281,3 @@
 
 </html>
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alternating List</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .timeline {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: #ccc;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-
-        .container {
-            padding: 10px 40px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-        }
-
-        .left {
-            left: 0;
-        }
-
-        .right {
-            left: 50%;
-        }
-
-        .content {
-            padding: 20px 30px;
-            background-color: white;
-            position: relative;
-            border-radius: 6px;
-        }
-
-        .left .content {
-            margin-left: 70px;
-        }
-
-        .right .content {
-            margin-right: 70px;
-        }
-
-        .left::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            right: 30px;
-            border: medium solid white;
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent white;
-        }
-
-        .right::before {
-            content: " ";
-            height: 0;
-            position: absolute;
-            top: 22px;
-            width: 0;
-            z-index: 1;
-            left: 30px;
-            border: medium solid white;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent white transparent transparent;
-        }
-
-        .left::after {
-            content: " ";
-            position: absolute;
-            top: 15px;
-            right: -15px;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #f4f4f4;
-            border: 4px solid #ccc;
-            z-index: 1;
-        }
-
-        .right::after {
-            content: " ";
-            position: absolute;
-            top: 15px;
-            left: -15px;
-            width: 25px;
-            height: 25px;
-            border-radius: 50%;
-            background-color: #f4f4f4;
-            border: 4px solid #ccc;
-            z-index: 1;
-        }
-    </style>
-</head>
-<body>
-
-<div class="timeline">
-    <div class="container left">
-        <div class="content">
-            <h2>Item 1</h2>
-            <p>Description for Item 1</p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="content">
-            <h2>Item 2</h2>
-            <p>Description for Item 2</p>
-        </div>
-    </div>
-    <div class="container left">
-        <div class="content">
-            <h2>Item 3</h2>
-            <p>Description for Item 3</p>
-        </div>
-    </div>
-    <div class="container right">
-        <div class="content">
-            <h2>Item 4</h2>
-            <p>Description for Item 4</p>
-        </div>
-    </div>
-    <div class="container left">
-        <div class="content">
-            <h2>Item 5</h2>
-            <p>Description for Item 5</p>
-        </div>
-    </div>
-</div>
-
-</body>
-</html> -->
