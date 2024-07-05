@@ -7,7 +7,7 @@ menu.addEventListener('click', function () {
 });
   
 
-const text = `Your One Stop Solution For All Climate Compliance Needs`;
+const text = `Your One Stop Solution For All Climate Compliance Needs!`;
 const container = document.getElementById('section1');
 let index = 0;
 
