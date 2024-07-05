@@ -37,7 +37,7 @@
     }
 
     .section {
-      height: 100vh;
+      /* height: 100vh; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -74,9 +74,9 @@
       height: auto;
     }
 
-    #our_product {
+    .our_product {
       justify-content: initial;
-      height: 130vh;
+      height: 100%;
     }
 
     .carousel-item {
@@ -85,9 +85,9 @@
     }
 
     @media screen and (max-width: 768px) {
-      #our_product {
+      .our_product {
         justify-content: initial;
-        height: 60vh;
+        height: 60%;
         padding: 10px;
       }
 
@@ -225,9 +225,11 @@
       </div>
     </div>
   </div>
-  <div class="section" id="our_product">
-    <h1>Our Product</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <div>
+    <div class="section" id="our_product">
+      <h1>Our Product</h1>
+    </div>
+    <div id="carouselExampleIndicators" class="our_product carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -254,56 +256,59 @@
       </a>
     </div>
   </div>
-  <div class="section" id="contact_us">
-    <h1>The Team</h1>
-    <a href="https://www.linkedin.com/in/aditya-mohan-96300818b/">
+  <div>
+    <div class="section" id="contact_us">
+      <h1>The Team</h1>
+      <a href="https://www.linkedin.com/in/aditya-mohan-96300818b/">
+
+        <div>
+          <div class="img_section">
+            <img class="img" src="images/Aditya.jpg">
+          </div>
+
+
+          <div class="contact_us">
+            <h2>Aditya Mohan</h2>
+            <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
+          </div>
+
+        </div>
+      </a>
+
 
       <div>
-        <div class="img_section">
-          <img class="img" src="images/Aditya.jpg">
-        </div>
+        <a href="https://www.linkedin.com/in/dhruv-saxena-52bb4919a/">
+
+          <div class="img_section">
+            <img class="img" src="images/Dhruv.jpg">
+          </div>
 
 
-        <div class="contact_us">
-          <h2>Aditya Mohan</h2>
-          <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
-        </div>
+          <div class="contact_us">
+            <h2>Dhruv Saxena</h2>
+            <p>Dhruv is an alumni of BITS Pilani having graduated with a B.E. in Computer Science
+              Engineering and a M.S. in Mathematics.He loves to play frisbee and bake in his free time.
+            </p>
+          </div>
 
       </div>
-    </a>
+      </a>
+      <a href="https://www.linkedin.com/in/saicharan-ganapathy-1b59b91b3/">
 
+        <div>
+          <div class="img_section">
+            <img class="img" src="images/Saicharan.jpg">
+          </div>
 
-    <div>
-      <a href="https://www.linkedin.com/in/dhruv-saxena-52bb4919a/">
-
-        <div class="img_section">
-          <img class="img" src="images/Dhruv.jpg">
+          <div class="contact_us">
+            <h2>SaiCharan Ganapathy</h2>
+            <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
+          </div>
         </div>
+      </a>
 
-
-        <div class="contact_us">
-          <h2>Dhruv Saxena</h2>
-          <p>Dhruv is an alumni of BITS Pilani having graduated with a B.E. in Computer Science
-            Engineering and a M.S. in Mathematics.He loves to play frisbee and bake in his free time.
-          </p>
-        </div>
 
     </div>
-    </a>
-    <a href="https://www.linkedin.com/in/saicharan-ganapathy-1b59b91b3/">
-
-      <div>
-        <div class="img_section">
-          <img class="img" src="images/Saicharan.jpg">
-        </div>
-
-        <div class="contact_us">
-          <h2>SaiCharan Ganapathy</h2>
-          <p>Jane is the CTO of Comply.AI. She has over 15 years of experience in the tech industry.</p>
-        </div>
-      </div>
-    </a>
-
   </div>
 
   <script src="app.js"></script>
