@@ -1,10 +1,20 @@
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
+const menuItems = document.querySelectorAll('.navbar__item')
 
 menu.addEventListener('click', function () {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
 });
+
+for(let i =0;i<menuItems.length ; i++){
+  menuItems[i].addEventListener('click', function () {
+    if(menuLinks.classList.contains("active")){
+      menu.classList.toggle('is-active');
+      menuLinks.classList.toggle('active');
+    }
+  })
+}
   
 
 const text = `Your One Stop Solution For All Climate Compliance Needs!`;
@@ -14,6 +24,7 @@ let index = 0;
 function addCalendly(){
   console.log('typeWriter');
   Calendly.initBadgeWidget({ url: 'https://calendly.com/justdhs/compliance-reporting-discussion', text: 'Schedule An Appointment With Us', color: '#0069ff', textColor: '#ffffff', branding: undefined }); 
+  console.log(menuItems.length)
   typeWriter()
 }
 function typeWriter() {
@@ -42,4 +53,3 @@ window.addEventListener('wheel', function() {
 //   console.log("scrolling");
 //   myFunction()
 // };
-

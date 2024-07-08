@@ -161,12 +161,12 @@ html body{
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 50vh;
+    height: 80vh;
     font-size: 1.6rem;
   }
 
   #navbar__logo {
-    padding-left: 25px;
+    font-size: larger;
   }
 
   .navbar__toggle .bar {
@@ -761,7 +761,7 @@ html body{
   z-index: 1;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .left .content{
     margin-left:0px !important;
   }
