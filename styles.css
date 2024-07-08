@@ -386,6 +386,10 @@ html body{
     margin-top: 1rem;
     font-size: 1.5rem;
   }
+
+  #section1 {
+    height: 120%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -764,9 +768,11 @@ html body{
 @media screen and (max-width: 680px) {
   .left .content{
     margin-left:0px !important;
+    padding: 20px 7%;
   }
   .right .content{
     margin-right: 0px !important;
+    padding: 20px 7%;
   }
   .container{
     padding: 4%;
