@@ -17,7 +17,7 @@ for(let i =0;i<menuItems.length ; i++){
 }
   
 
-const text = `Your One Stop Solution For All Climate Compliance Needs!`;
+const text = `Your one stop solution to research, discover and connect with climate project developers from across the world!`;
 const container = document.getElementById('section1');
 let index = 0;
 
@@ -31,7 +31,7 @@ function typeWriter() {
   if (index < text.length) {
     container.innerHTML += text.charAt(index);
     index++;
-    setTimeout(typeWriter, 100); // Adjust the speed here (in milliseconds)
+    setTimeout(typeWriter, 40); // Adjust the speed here (in milliseconds)
   }
 }
 
